@@ -18,7 +18,7 @@
   @extend .grid;
   margin-top: 50px;
   display: inline-flex;
-  &__item {
+    &__item {
     flex-basis: 100%;
     position: relative;
     flex-wrap: wrap;
