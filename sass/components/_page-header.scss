@@ -1,0 +1,119 @@
+.page__header {
+  border-bottom: 1px solid #ececec;
+  background-color: #fff;
+  padding: 16px 15px;
+  max-width: 100%;
+  
+  .page__container {
+      display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  
+    .page__logo {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      color: #000000;
+      margin-right: 93px;
+
+      &__item {
+        color: #2196f3;
+      }
+    }
+    .nav {
+      position: relative;
+    }
+    .menu__nav {
+      display: none;
+      gap: 50px;
+      &__item {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 0;
+      }
+      &__link {
+        color: #212121;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14px;
+        position: relative;
+        &:hover,
+        &:active,
+        &:focus {
+          color:#2196f3;
+        }
+      }
+      .curent-card::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        position: absolute;
+        background-color: #2196f3;
+        bottom: -43px;
+        left: 0;
+      }
+    }
+    .contacts__nav {
+      display: none;
+      gap: 40px;
+      margin-left: auto;
+
+      &__item {
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-right: auto;
+      }
+    }
+    .contacts__source {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      color: #757575;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #2196f3;
+      }
+    }
+    .contacts__icon {
+      display: inline-block;
+      fill: currentColor;
+      margin-right: 10px;
+      height: 14px;
+      width: 16px;
+      &:hover {
+        color: #757575;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page__header{
+      padding: 21px 15px;
+} 
+.page__header .page__container .menu__nav{
+  display: flex;
+  flex-direction: row;
+}
+.page__header .page__container .contacts__nav{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+}
+@media screen and (min-width: 1200px){ 
+.page__header .page__container .contacts__nav{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  }
+ }
+}

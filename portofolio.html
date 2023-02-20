@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="page__header">
+      <div class="page__container">
+        <a href="./index.html" class="page__logo"
+          ><span class="page__logo__item">Web</span>Studio</a
+        >
+        <!-- Navigation header -->
+        <nav class="nav">
+          <ul class="menu__nav">
+            <li class="menu__nav__item">
+              <a
+                class="menu__nav__link curent-card"
+                href="studio.html"
+                target="_blank"
+                >Studio</a
+              >
+            </li>
+            <li class="menu__nav__item">
+              <a class="menu__nav__link" href="portofolio.html" target="_blank"
+                >Portofolio</a
+              >
+            </li>
+            <li class="menu__nav__item">
+              <a class="menu__nav__link nav__link link" href="Contacts.html"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts__nav">
+          <li class="contacts__item">
+            <a class="contacts__source" href="info@devstudio.com">
+              <svg class="contacts__icon" height="12">
+                <use href="./images/icons.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__source" href="tel:+12127724150">
+              <svg class="contacts__icon" height="12">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+              +1 212-772-4150</a
+            >
+          </li>
+        </ul>
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      </div>
+    </header>
+    <main class="main-page-portofolio">
+      <section class="section__portofolio section">
+        <div class="container">
+          <h1 hidden>Image gallery</h1>
+          <ul class="button__section">
+            <li class="button__section__item">
+              <button type="button" class="button__section__nav">All</button>
+            </li>
+            <li class="button__section__item">
+              <button type="button" class="button__section__nav">
+                Web-sites
+              </button>
+            </li>
+            <li class="button__section__item">
+              <button type="button" class="button__section__nav">Apps</button>
+            </li>
+            <li class="button__section__item">
+              <button type="button" class="button__section__nav">Design</button>
+            </li>
+            <li class="button__section__item">
+              <button type="button" class="button__section__nav">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="galery__list">
+            <li class="galery__list__item">
+              <div class="overlay">
+                <div class="overlay__card">
+                  <p class="overlay__card--text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <img class="images-prt"
+                  srcset="images/img-portofolio/porto1.4.png 450w, images/img-portofolio/porto1.9.png 900w"
+                  src="images/img-portofolio/porto1.4.png"
+                  alt="Web-site"
+                  width="370"
+                  height="260"
+                />
+              </div>
+              <div class="cards">
+                <h4 class="cards__product--title">Technoduck</h4>
+                <p class="cards__text--description">Web-site</p>
+              </div>
+            </li>
+            <li class="galery__list__item">
+              <div class="overlay">
+                <div class="overlay__card">
+                  <p class="overlay__card--text">
+                    We make business cards, map and presentation flyer, website,
+                    poster design, presentation catalog, newsletter, postcard,
+                    street banner, e-banner and obviously the logo.
+                  </p>
+                </div>
+                <img class="images-prt"
+                srcset="images/img-portofolio/porto2.4.png 450w, images/img-portofolio/porto2.9.png 900w"
+                  src="images/img-portofolio/porto2.4.png"
+                  alt="Poster New Orlean vs Golden Star"
+                  width="370"
+                  height="260"
+                />
+              </div>
+              <div class="cards">
+                <h4 class="cards__product--title">
+                  Poster New Orlean vs Golden Star
+                </h4>
+                <p class="cards__text--description">Design</p>
+              </div>
+            </li>
+            <li class="galery__list__item">
+              <div class="overlay">
+                <div class="overlay__card">
+                  <p class="overlay__card--text">
+                    Shrimp, lobster, clams, trout, mackerel, squid. Here you
+                    find what you need. Subscribe! Join the 14,500 subscribers
+                    and get a 25% discount on every order, with 10 lei/month!
+                  </p>
+                </div>
+                <img class="images-prt"
+                srcset="images/img-portofolio/porto3.4.png 450w, images/img-portofolio/porto3.9.png 900w"
+                  src="images/img-portofolio/porto3.4.png"
+                  alt="Seafood Restaurant"
+                  width="370"
+                  height="260"
+                />
+              </div>
+              <div class="cards">
+                <h4 class="cards__product--title">Seafood Restaurant</h4>
+                <p class="cards__text--description">Apps</p>
+              </div>
+            </li>
+            <li class="galery__list__item">
+              <div class="overlay">
+                <div class="overlay__card">
+                  <p class="overlay__card--text">
+                    Accessories and others: car chargers, protective covers,
+                    sunshades, oils, car paints, thinners, paint guns, audio.
+                  </p>
+                </div>
+                <img class="images-prt"
+                srcset="images/img-portofolio/porto4.4.png 450w, images/img-portofolio/porto4.9.png 900w"
+                  src="images/img-portofolio/porto4.4.png"
+                  alt="Project Prime"
+                  width="370"
+                  height="260"
+                />
+              </div>
+              <div class="cards">
+                <h4 class="cards__product--title">Project Prime</h4>
+                <p class="cards__text--description">Marketing</p>
+              </div>
+            </li>
+            <li class="galery__list__item">
+              <div class="overlay">
+                <div class="overlay__card">
+                  <p class="overlay__card--text">
+                    Use the Project or Roadmap app in Teams
+                  </p>
+                </div>
+
+                <img class="images-prt" srcset="images/img-portofolio/porto5.4.png 450w, images/img-portofolio/porto5.9.png 900w" src="images/img-portofolio/porto5.4.png" alt="Project-Boxes" width="370" />
+              </div>
+              <div class="cards">
+                <h2 class="cards__product--title">Project Boxes</h2>
+                <p class="cards__domain--description">Apps</p>
+              </div>
+            </li>
+            <li class="galery__list__item">
+              <div class="overlay">
+                <div class="overlay__card">
+                  <p class="overlay__card--text">
+                    You can adapt the entire content of the page according to
+                    your needs. Start here! Ideal for private and business
+                    websites. The easiest editor on the market. 24/7 support.
+                  </p>
+                </div>
+                <img class="images-prt"
+                  srcset="images/img-portofolio/porto6.4.png 450w, images/img-portofolio/porto6.9.png 900w"
+                  src="images/img-portofolio/porto6.4.png"
+                  alt="Inspiration has no Borders"
+                  width="370"
+                  height="260"
+                />
+              </div>
+              <div class="cards">
+                <h4 class="cards__product--title">
+                  Inspiration has no Borders
+                </h4>
+                <p class="cards__text--description">Web-site</p>
+              </div>
+            </li>
+            <li class="galery__list__item">
+              <div class="overlay">
+                <div class="overlay__card">
+                  <p class="overlay__card--text">
+                    One thing I’ve learned in my journey as a designer is that
+                    design has to be inclusive and reflect the whole world
+                    around us.
+                  </p>
+                </div>
+                <img class="images-prt"
+                  srcset="images/img-portofolio/porto7.4.png 450w, images/img-portofolio/porto7.9.png 900w"
+                  src="images/img-portofolio/porto7.4.png"
+                  alt="Limited Edition"
+                  width="370"
+                  height="260"
+                />
+              </div>
+              <div class="cards">
+                <h4 class="cards__product--title">Limited Edition</h4>
+                <p class="cards__text--description">Design</p>
+              </div>
+            </li>
+            <li class="galery__list__item">
+              <div class="overlay">
+                <div class="overlay__card">
+                  <p class="overlay__card--text">
+                    Ai auzit despre noi? Shop multi-brand, designeri
+                    internaționali&români, încălțăminte&accesorii
+                  </p>
+                </div>
+                <img class="images-prt"
+                  srcset="images/img-portofolio/porto8.4.png 450w, images/img-portofolio/porto8.9.png 900w"
+                  src="images/img-portofolio/porto8.4.png"
+                  alt="Project LAB"
+                  width="370"
+                  height="260"
+                />
+              </div>
+              <div class="cards">
+                <h4 class="cards__product--title">Project LAB</h4>
+                <p class="cards__text--description">Marketing</p>
+              </div>
+            </li>
+            <li class="galery__list__item">
+              <div class="overlay">
+                <div class="overlay__card">
+                  <p class="overlay__card--text">
+                    Use Semrush small biz tools to find profitable keywords and
+                    get ahead of competitors. With Semrush marketing software,
+                    you can grow your small business faster.
+                  </p>
+                </div>
+                <img class="images-prt"
+                  srcset="images/img-portofolio/porto9.4.png 450w, images/img-portofolio/porto9.9.png 900w"
+                  src="images/img-portofolio/porto9.4.png"
+                  alt="Growing Business"
+                  width="370"
+                  height="260"
+                />
+              </div>
+              <div class="cards">
+                <h4 class="cards__product--title">Growing Business</h4>
+                <p class="cards__text--description">Apps</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Footer pages-->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__block">
+          <!--Logo-->
+          <a class="footer__logo" href="./index.html">
+            <span class="footer__span">Web</span>Studio</a
+          >
+
+          <!--Address and contact details-->
+          <address class="footer__adrees">
+            <ul class="footer__list__main">
+              <li class="footer__list__item">
+                <a
+                  class="footer__list__location"
+                  href="https://goo.gl/maps/WX2whz8Sf4KxUwsg9"
+                  target="_blank"
+                  >695 Park Ave, NY 10065, USA</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a
+                  class="footer__list__contacts"
+                  href="mailto:info@devstudio.com:"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a class="footer__list__contacts" href="tel:+1212-772-4150"
+                  >+1 212-772-4150
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!--find-us-->
+        <section class="find">
+          <div class="find__blocks">
+            <h4 class="find__title">FIND US ON</h4>
+            <ul class="find__list">
+              <li class="find__list__social">
+                <a href="#" target="_blank" class="find__list__social--link">
+                  <svg class="find__social__icons" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="find__list__social">
+                <a href="#" target="_blank" class="find__list__social--link">
+                  <svg class="find__social__icons" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="find__list__social">
+                <a href="#" target="_blank" class="find__list__social--link">
+                  <svg class="find__social__icons" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="find__social">
+                <a href="#" target="_blank" class="find__list__social--link">
+                  <svg class="find__social__icons" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="subscribe">
+          <h3 class="subcribe__title">Subscribe to the newsletter</h3>
+          <form class="subcribe__footer-form">
+            <label class="subcribe__contact">
+              <input
+                class="subcribe__input-adrees"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subcribe__button" type="submit">
+              <svg class="subcribe__submit-send" width="24" height="24">
+                <use href="./images/icon-modal.svg#icon-send-button"></use></svg>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24">
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <nav class="nav mobile meniu">
+        <ul class="menu__nav">
+          <li class="menu__nav__item">
+            <a class="menu__nav__link curent-card" href="studio.html"
+              >Studio</a
+            >
+          </li>
+          <li class="menu__nav__item">
+            <a class="menu__nav__link" href="portofolio.html">Portfolio</a>
+          </li>
+          <li class="menu__nav__item">
+            <a class="menu__nav__link nav__link link" href="#contacts.html"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="contacts__nav mobile-menu">
+        <li class="contacts__nav__item">
+          <a class="contacts__nav__source" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contacts__nav__item">
+          <a class="contacts__source-number" href="tel:+1212-772-4150">
+            +1 212-772-4150</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-media">
+        <li>
+          <a class="mobile-social-media__item no-border-item">Instagram</a>
+        </li>
+        <li><a class="mobile-social-media__item">Twitter</a></li>
+        <li><a class="mobile-social-media__item">Facebook</a></li>
+        <li><a class="mobile-social-media__item">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>
