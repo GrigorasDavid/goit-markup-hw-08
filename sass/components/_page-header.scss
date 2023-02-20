@@ -46,7 +46,7 @@
           color: #2196f3;
         }
       }
-      .curent-card::after, :focus, :active {
+      .curent-card::after {
         content: "";
         width: 100%;
         height: 4px;
@@ -61,7 +61,6 @@
       display: none;
       gap: 40px;
       margin-left: auto;
-
       &__item {
         flex-grow: 0;
         flex-shrink: 0;
@@ -84,7 +83,6 @@
       display: inline-block;
       fill: currentColor;
       margin-right: 10px;
-
       height: 14px;
       width: 16px;
       &:hover {
